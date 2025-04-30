@@ -1,0 +1,15 @@
+descuento_estudiante = 0.15
+des_cliente_frecuente = 0.10
+precio_inicial= float(input("¿cual es el precio del producto que desea llevar?"))
+print("¿que tipo de cliente es usted?")
+tipo_descuento = input("1.estudiante, 2.cliente frecuente, 3.ninguno")
+if tipo_descuento == "1":
+    precio_final = precio_inicial*(1-descuento_estudiante)
+    print("el precio de su compra es:" , precio_final, "precio original:" , precio_inicial )
+elif tipo_descuento == "2":
+    precio_final = precio_inicial*(1-des_cliente_frecuente)
+    print("el precio de su compra es:" , precio_final, "precio original:" , precio_inicial )
+elif tipo_descuento == "3": 
+    print("no se realizo ningun descuento, el precio de su compra es:" , precio_inicial)
+else:
+    print("seleccione un descuento valido")
