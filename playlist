@@ -1,0 +1,8 @@
+duracion= float(input("ingrese la duracion de la cancion"))
+genero= input("seleccione el genero de la cancion, 1:pop, 2:rock, 3:reggaeton")
+año= int(input("seleccione el año de la cancion"))
+#float decimal, int entero
+if duracion == "3.00" and genero== "3" and año >= "2020":
+    print("la cancion cumple los criterios para la playlist")
+else:
+    print("la cancion no cumple los criterios para ser incluida")
